@@ -6,7 +6,7 @@ const onlineUsers = {}
 module.exports = function setupSocket(server) {
   const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin:["http://localhost:5173","https://chat-app-frontend-two-xi.vercel.app"] ,
     methods: ["GET", "POST"]
   }
 })  
