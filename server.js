@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express")
 const dotenv = require("dotenv")
 const cors = require("cors")
@@ -5,7 +6,7 @@ const connectDB = require("./config/db")
 const http = require("http")
 const setupSocket=require("./socket/socket")
 const redisClient=require("./config/redis")
-dotenv.config()
+
 connectDB()
 
 const app = express()  // ← create app FIRST
