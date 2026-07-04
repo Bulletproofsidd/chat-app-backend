@@ -17,7 +17,7 @@ const io=setupSocket(server)
 // Middleware
 app.use(express.json())
 app.use(cors({
-  origin: ["http://localhost:5173", "https://chat-app-frontend-two-xi.vercel.app"],
+  origin: ["http://localhost:5173", "https://chat-app-frontend-sidd2004.vercel.app/"],
   credentials: true
 }))
 
